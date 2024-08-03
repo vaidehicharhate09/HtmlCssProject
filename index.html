@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Menu</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="burger-container">
+        <div class="burger-menu">
+            <img src="burger.jpg" alt="Burger Image" class="burger-image">
+            <div class="burger-details">
+                <div class="burger-name">Classic Veggie Burger</div>
+                <div class="quantity">
+                    <label for="quantity1">Quantity:</label>
+                    <input type="number" id="quantity1" name="quantity" min="1" max="5" value="1">
+                </div>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="type1" value="veg" checked>
+                        <span class="option-box">Veg</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="type1" value="non-veg">
+                        <span class="option-box">Non-Veg</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="type1" value="egg">
+                        <span class="option-box">Egg</span>
+                    </label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Classic Veggie Burger', 'type1', 'quantity1')">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Repeat similar blocks for other burgers -->
+        <div class="burger-menu">
+            <img src="burger.jpg" alt="Burger Image" class="burger-image">
+            <div class="burger-details">
+                <div class="burger-name">Spicy Chicken Burger</div>
+                <div class="quantity">
+                    <label for="quantity2">Quantity:</label>
+                    <input type="number" id="quantity2" name="quantity" min="1" max="5" value="1">
+                </div>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="type2" value="veg">
+                        <span class="option-box">Veg</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="type2" value="non-veg" checked>
+                        <span class="option-box">Non-Veg</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="type2" value="egg">
+                        <span class="option-box">Egg</span>
+                    </label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Spicy Chicken Burger', 'type2', 'quantity2')">Add to Cart</button>
+            </div>
+        </div>
+        <div class="burger-menu">
+            <img src="burger.jpg" alt="Burger Image" class="burger-image">
+            <div class="burger-details">
+                <div class="burger-name">Egg Delight Burger</div>
+                <div class="quantity">
+                    <label for="quantity3">Quantity:</label>
+                    <input type="number" id="quantity3" name="quantity" min="1" max="5" value="1">
+                </div>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="type3" value="veg">
+                        <span class="option-box">Veg</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="type3" value="non-veg">
+                        <span class="option-box">Non-Veg</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="type3" value="egg" checked>
+                        <span class="option-box">Egg</span>
+                    </label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Egg Delight Burger', 'type3', 'quantity3')">Add to Cart</button>
+            </div>
+        </div>
+        <div class="burger-menu">
+            <img src="burger.jpg" alt="Burger Image" class="burger-image">
+            <div class="burger-details">
+                <div class="burger-name">Cheesy Veggie Burger</div>
+                <div class="quantity">
+                    <label for="quantity4">Quantity:</label>
+                    <input type="number" id="quantity4" name="quantity" min="1" max="5" value="1">
+                </div>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="type4" value="veg" checked>
+                        <span class="option-box">Veg</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="type4" value="non-veg">
+                        <span class="option-box">Non-Veg</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="type4" value="egg">
+                        <span class="option-box">Egg</span>
+                    </label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('Cheesy Veggie Burger', 'type4', 'quantity4')">Add to Cart</button>
+            </div>
+        </div>
+        <div class="burger-menu">
+            <img src="burger.jpg" alt="Burger Image" class="burger-image">
+            <div class="burger-details">
+                <div class="burger-name">BBQ Bacon Burger</div>
+                <div class="quantity">
+                    <label for="quantity5">Quantity:</label>
+                    <input type="number" id="quantity5" name="quantity" min="1" max="5" value="1">
+                </div>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="type5" value="veg">
+                        <span class="option-box">Veg</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="type5" value="non-veg" checked>
+                        <span class="option-box">Non-Veg</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="type5" value="egg">
+                        <span class="option-box">Egg</span>
+                    </label>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('BBQ Bacon Burger', 'type5', 'quantity5')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <button onclick="viewCart()">View Cart</button>
+        <div id="cart-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
